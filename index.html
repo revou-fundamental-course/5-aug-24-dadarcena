@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BMI <span>CALCULATE</span></h1>
+        </header>
+        <div class="content">
+            <div class="bmi-calculator">
+                <h2>BMI Calculator</h2>
+                <p>BMI (Body Mass Index) adalah ukuran yang digunakan untuk menilai apakah seseorang memiliki berat badan yang sehat berdasarkan tinggi badan mereka. BMI dihitung dengan membagi berat badan seseorang dalam kilogram dengan kuadrat dari tinggi badannya dalam meter.</p>
+                <form id="bmiForm">
+                    <label for="height">Height (cm)</label>
+                    <input type="number" id="height" required>
+                    <label for="weight">Weight (kg)</label>
+                    <input type="number" id="weight" required>
+                    <label for="gender">Gender</label>
+                    <select id="gender" required>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <div class="buttons">
+                        <button type="button" onclick="calculateBMI()">HITUNG</button>
+                        <button type="reset">RESET</button>
+                    </div>
+                </form>
+            </div>
+            <div class="bmi-result" id="bmiResult">
+                <h2 id="bmiValue"></h2>
+                <p id="bmiStatus"></p>
+                <button type="button">Download Hasil BMI</button>
+                <p id="bmiMessage"></p>
+                <div class="buttons">
+                    <button type="button">Konsultasi Ahli Gizi</button>
+                    <button type="button">Registrasi Online Ahli Gizi</button>
+                </div>
+            </div>
+            <div class="bmi-info">
+                <img src="asset/bmi diagram.jpg" alt="BMI Chart">
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di BMI Kalkulator.</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
